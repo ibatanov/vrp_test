@@ -28,8 +28,6 @@ struct Request {
     matrix: Matrix,
 }
 
-//ab -p /Users/igor/Desktop/rust/inroute-core/test2.json -T application/json -c 4 -n 10000 http://127.0.0.1:8000/
-
 #[post("/", format = "json", data = "<request>")]
 fn index(request: Json<Request>) -> Json<Solution> {
     let environment = Arc::new(Environment::default());

@@ -1,0 +1,152 @@
+{
+  "problem": {
+    "plan": {
+      "jobs": [
+        {
+          "id": "msk1",
+          "pickups": [
+            {
+              "places": [
+                {
+                  "location": {
+                    "lat": 55.755819,
+                    "lng": 37.617644
+                  },
+                  "duration": 300.0
+                }
+              ],
+              "demand": [
+                1
+              ]
+            }
+          ],
+          "deliveries": [
+            {
+              "places": [
+                {
+                  "location": {
+                    "lat": 56.129057,
+                    "lng": 40.406635
+                  },
+                  "duration": 300.0,
+                  "times": [
+                    [
+                      "2021-08-02T09:00:00Z",
+                      "2021-08-02T18:00:00Z"
+                    ]
+                  ]
+                }
+              ],
+              "demand": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "msk2",
+          "pickups": [
+            {
+              "places": [
+                {
+                  "location": {
+                    "lat": 55.755819,
+                    "lng": 37.617644
+                  },
+                  "duration": 300.0
+                }
+              ],
+              "demand": [
+                1
+              ]
+            }
+          ],
+          "deliveries": [
+            {
+              "places": [
+                {
+                  "location": {
+                    "lat": 56.326797,
+                    "lng": 44.006516
+                  },
+                  "duration": 300.0,
+                  "times": [
+                    [
+                      "2021-08-02T09:00:00Z",
+                      "2021-08-02T18:00:00Z"
+                    ]
+                  ]
+                }
+              ],
+              "demand": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "fleet": {
+      "vehicles": [
+        {
+          "typeId": "vehicle",
+          "vehicleIds": [
+            "vehicle_1"
+          ],
+          "profile": {
+            "matrix": "normal_car"
+          },
+          "costs": {
+            "fixed": 22.0,
+            "distance": 2.0E-4,
+            "time": 0.004806
+          },
+          "shifts": [
+            {
+              "start": {
+                "earliest": "2021-08-01T09:00:00Z",
+                "location": {
+                  "lat": 55.755819,
+                  "lng": 37.617644
+                }
+              }
+            }
+          ],
+          "capacity": [
+            10
+          ]
+        }
+      ],
+      "profiles": [
+        {
+          "name": "normal_car"
+        }
+      ]
+    }
+  },
+  "matrix": {
+    "distances": [
+      0,
+      184330,
+      421373,
+      184770,
+      0,
+      234511,
+      422573,
+      235452,
+      0
+    ],
+    "travelTimes": [
+      0,
+      11012,
+      23127,
+      11097,
+      0,
+      12590,
+      23305,
+      12622,
+      0
+    ],
+    "profile": "normal_car"
+  }
+}
