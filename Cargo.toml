@@ -1,0 +1,12 @@
+[package]
+name = "inroute_core"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc.1", features = ["json"] }
+serde = "1.0.129"
+vrp-pragmatic = "1.11.2"
+#jemallocator = "0.3.2"
